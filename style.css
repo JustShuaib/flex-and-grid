@@ -78,24 +78,21 @@ button:hover {
   color: hsl(31, 77%, 52%);
 }
 
-.orange-btn:active {
+.orange-btn:hover {
   background-color: hsl(31, 77%, 52%);
-  color: hsl(0, 0%, 95%);
 }
 
 .dark-cyan-btn {
   color: hsl(184, 100%, 22%);
 }
-.dark-cyan-btn:active {
-  color: hsl(0, 0%, 95%);
+.dark-cyan-btn:hover {
   background-color: hsl(184, 100%, 22%);
 }
 
 .very-dark-cyan-btn {
   color: hsl(179, 100%, 13%);
 }
-.very-dark-cyan-btn:active {
-  color: hsl(0, 0%, 95%);
+.very-dark-cyan-btn:hover {
   background-color: hsl(179, 100%, 13%);
 }
 
