@@ -1,100 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: "Big Shoulders Display", cursive;
-  font-family: "Lexend Deca", sans-serif;
-  background-color: hsl(0, 0%, 95%);
-  margin: 70px;
-  font-size: 15px;
-  width: 80%;
-}
-.sedan {
-  background-color: hsl(31, 77%, 52%);
-  text-align: left;
-  margin: 0px;
-  width: 80%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-p {
-  color: hsla(0, 0%, 100%, 0.75);
-  margin: 25px;
-}
-h2 {
-  margin: 25px;
-  color: hsl(0, 0%, 95%);
-}
-img {
-  width: 20%;
-  margin: 25px;
-}
-.b1 {
-  margin: 20px;
-  width: 90px;
-  padding: 8px;
-  border-radius: 50px;
-  border: 1px solid hsl(31, 77%, 52%);
-  color: hsl(31, 77%, 52%);
-  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.suvs {
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  flex-direction: row;
+}
+.card {
+  padding: 48px;
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dark-cyan {
   background-color: hsl(184, 100%, 22%);
-  text-align: left;
-  margin: 0px;
-  width: 80%;
 }
-.b2 {
-  margin: 20px;
-  width: 90px;
-  padding: 8px;
-  border-radius: 50px;
-  border: 1px solid hsl(184, 100%, 22%);
-  color: hsl(184, 100%, 22%);
-  background-color: hsl(0, 0%, 95%);
-}
-.lux {
+
+.very-dark-cyan {
   background-color: hsl(179, 100%, 13%);
-  text-align: left;
-  margin: 0px;
-  width: 80%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.b3 {
-  margin: 20px;
-  width: 90px;
-  padding: 8px;
-  border-radius: 50px;
-  border: 1px solid hsl(179, 100%, 13%);
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 0 0 35px 0;
+  margin-bottom: 35px;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  padding: 25px 25px 35px 0;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 46px;
+}
+
+img {
+  padding: 10px 0 0 0;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 14px 36px;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: inherit;
+  color: hsl(0, 0%, 95%);
+}
+.orange-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.orange-btn:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.dark-cyan-btn {
+  color: hsl(184, 100%, 22%);
+}
+.dark-cyan-btn:active {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan-btn {
   color: hsl(179, 100%, 13%);
 }
-a {
-  text-decoration: none;
-  color: red;
+.very-dark-cyan-btn:active {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
 }
-@media only screen and (min-width: 600px) {
-  .flex {
-    display: flex;
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 35px;
   }
-  body {
-    position: absolute;
-    top: 30%;
+  .orange {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
   }
-  .sedan {
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 0px;
+  .very-dark-cyan {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
   }
-  .lux {
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0px;
-  }
-}
-.attribution {
-  font-size: 15px;
-  text-align: left;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
