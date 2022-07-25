@@ -107,7 +107,7 @@ button:hover {
 
 @media (max-width: 700px) {
   body {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .container {
     flex-direction: column;
@@ -116,7 +116,7 @@ button:hover {
     margin-bottom: 35px;
   }
   .grid-btn {
-    top: 5px;
+    top: -25px;
   }
   .orange {
     border-top-right-radius: 10px;
