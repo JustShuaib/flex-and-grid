@@ -116,7 +116,7 @@ button:hover {
     margin-bottom: 35px;
   }
   .grid-btn {
-    top: -50%;
+    margin-top: -50px;
   }
   .orange {
     border-top-right-radius: 10px;
